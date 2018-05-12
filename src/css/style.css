@@ -177,7 +177,8 @@ body {
             align-items: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    position: relative; }
     #nav nav .nav-menu ul li a {
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
@@ -187,17 +188,20 @@ body {
       #nav nav .nav-menu ul li a.underline:after {
         content: '';
         display: block;
+        position: absolute;
+        left: 30%;
+        bottom: 15px;
         width: 0;
         height: 2px;
         background-color: #fff;
-        -webkit-transition: width 300ms;
-        -o-transition: width 300ms;
-        transition: width 300ms; }
+        -webkit-transition: width 500ms;
+        -o-transition: width 500ms;
+        transition: width 500ms; }
       #nav nav .nav-menu ul li a.underline:hover:after {
-        width: 100%;
-        -webkit-transition: width 300ms;
-        -o-transition: width 300ms;
-        transition: width 300ms; }
+        width: 40%;
+        -webkit-transition: width 500ms;
+        -o-transition: width 500ms;
+        transition: width 500ms; }
       #nav nav .nav-menu ul li a.border {
         border-radius: 5px;
         border: 3px solid #fff;

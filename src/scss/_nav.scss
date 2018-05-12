@@ -70,6 +70,7 @@
 					//line-height: 15vh;
 					align-items: center;
 					flex: 1;
+					position: relative;
 					a {
 						text-transform: uppercase;
 						font-family: $font-basic;
@@ -80,15 +81,18 @@
 						&.underline:after {
 							content: '';
 							display: block;
+							position: absolute;
+							left: 30%;
+							bottom: 15px;
 							width: 0;
 							height: 2px;
 							background-color: #fff;
-							transition: width 300ms;
+							transition: width 500ms;
 						}
 
 						&.underline:hover:after {
-							width: 100%;
-							transition: width 300ms;
+							width: 40%;
+							transition: width 500ms;
 						}
 
 						&.border {
