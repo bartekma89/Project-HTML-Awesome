@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,600&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
+
+//fonts properties
+$font-basic: 'Open Sans', sans-serif;
+$font-description: 'Raleway', sans-serif;
+
+$font-size-basic: 16px;
+$font-size-large: 40px;
+
+$font-weight-light: 200;
+$font-weight-bold: 600;
+
+//colors
+$font-color_1: #000;
+$font-color_2: #fff;
+$bg-color: #001820;
+$icon-color: #fff;
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+	width: 100%;
+	font-family: $font-description;
+	font-size: $font-size-basic;
+	color: $font-color_2;
+}
+
+body {
+	background-image: url('../images/bg_image.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.layer {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100vh;
+}

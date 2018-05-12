@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,600&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext");
 html,
 body,
 div,
@@ -122,6 +124,160 @@ table {
   border-spacing: 0; }
 
 a {
+  color: #fff;
   text-decoration: none; }
   a:hover, a:focus {
     text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  height: 100vh;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #fff; }
+
+body {
+  background-image: url("../images/bg_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh; }
+
+#nav .container {
+  width: 100%; }
+
+#nav nav {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #nav nav .logo {
+    margin: 0 auto;
+    width: 120px; }
+    #nav nav .logo img {
+      padding-bottom: 25px;
+      padding-top: 25px; }
+  #nav nav .nav-menu ul li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    #nav nav .nav-menu ul li a {
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      font-weigth: 600;
+      font-size: 18px;
+      line-height: 15vh; }
+      #nav nav .nav-menu ul li a.underline:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        -webkit-transition: width 300ms;
+        -o-transition: width 300ms;
+        transition: width 300ms; }
+      #nav nav .nav-menu ul li a.underline:hover:after {
+        width: 100%;
+        -webkit-transition: width 300ms;
+        -o-transition: width 300ms;
+        transition: width 300ms; }
+      #nav nav .nav-menu ul li a.border {
+        border-radius: 5px;
+        border: 3px solid #fff;
+        padding: 5px;
+        padding-left: 50px;
+        padding-right: 50px; }
+        #nav nav .nav-menu ul li a.border:hover {
+          background-color: #fff;
+          color: #001820; }
+  #nav nav .nav-menu .social-media {
+    margin: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #nav nav .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #001820;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden; }
+  #nav nav .open {
+    opacity: 1;
+    visibility: visible; }
+
+#nav .nav-mobile {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  z-index: 99; }
+  #nav .nav-mobile #nav-toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 5px 30px 10px 0; }
+    #nav .nav-mobile #nav-toggle span,
+    #nav .nav-mobile #nav-toggle span:before,
+    #nav .nav-mobile #nav-toggle span:after {
+      content: '';
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      border-radius: 10px;
+      height: 5px;
+      width: 30px;
+      background-color: #fff;
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+    #nav .nav-mobile #nav-toggle span:before {
+      top: -10px; }
+    #nav .nav-mobile #nav-toggle span:after {
+      bottom: -10px; }
+    #nav .nav-mobile #nav-toggle.active span {
+      background-color: transparent; }
+      #nav .nav-mobile #nav-toggle.active span:before, #nav .nav-mobile #nav-toggle.active span:after {
+        top: 0; }
+      #nav .nav-mobile #nav-toggle.active span:before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      #nav .nav-mobile #nav-toggle.active span:after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }

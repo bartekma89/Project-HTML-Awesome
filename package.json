@@ -1,5 +1,5 @@
 {
-  "name": "Projekt1",
+  "name": "Projekt-awsome",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,16 @@
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.2.1"
   },
-  "description": "",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekma89/Project-HTML-Awesome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bartekma89/Project-HTML-Awesome/issues"
+  },
+  "homepage": "https://github.com/bartekma89/Project-HTML-Awesome#readme",
+  "description": ""
 }

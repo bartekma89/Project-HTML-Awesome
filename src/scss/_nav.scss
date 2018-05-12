@@ -1,0 +1,146 @@
+@mixin position-vertical {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin hamburger {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	padding: 5px 30px 10px 0;
+	span,
+	span:before,
+	span:after {
+		content: '';
+		position: absolute;
+		display: block;
+		cursor: pointer;
+		border-radius: 10px;
+		height: 5px;
+		width: 30px;
+		background-color: #fff;
+		transition: all 300ms ease-in-out;
+	}
+	span:before {
+		top: -10px;
+	}
+	span:after {
+		bottom: -10px;
+	}
+	&.active span {
+		background-color: transparent;
+		&:before,
+		&:after {
+			top: 0;
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+#nav {
+	.container {
+		width: 100%;
+	}
+
+	nav {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.logo {
+			margin: 0 auto;
+			width: 120px;
+			img {
+				padding-bottom: 25px;
+				padding-top: 25px;
+			}
+		}
+
+		.nav-menu {
+			ul {
+				li {
+					//line-height: 15vh;
+					align-items: center;
+					flex: 1;
+					a {
+						text-transform: uppercase;
+						font-family: $font-basic;
+						font-weigth: $font-weight-bold;
+						font-size: 18px;
+						line-height: 15vh;
+
+						&.underline:after {
+							content: '';
+							display: block;
+							width: 0;
+							height: 2px;
+							background-color: #fff;
+							transition: width 300ms;
+						}
+
+						&.underline:hover:after {
+							width: 100%;
+							transition: width 300ms;
+						}
+
+						&.border {
+							border-radius: 5px;
+							border: 3px solid #fff;
+							padding: 5px;
+							padding-left: 50px;
+							padding-right: 50px;
+
+							&:hover {
+								background-color: #fff;
+								color: #001820;
+							}
+						}
+					}
+				}
+			}
+			.social-media {
+				margin: 35px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+		}
+		.overlay {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: $bg-color;
+			transition: all 500ms ease;
+			z-index: 2;
+			opacity: 0;
+			visibility: hidden;
+		}
+		.open {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.nav-mobile {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		height: 50px;
+		width: 50px;
+		z-index: 99;
+		#nav-toggle {
+			@include hamburger;
+		}
+	}
+}

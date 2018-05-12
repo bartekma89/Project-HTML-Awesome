@@ -23,7 +23,7 @@ gulp.task('sass', function() {
 				browsers: ['last 3 versions'],
 			})
 		)
-		.pipe(gulp.dest('src/css/'))
+		.pipe(gulp.dest('./src/css/'))
 		.pipe(browserSync.stream());
 });
 
