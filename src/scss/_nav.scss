@@ -73,7 +73,7 @@
 					a {
 						text-transform: uppercase;
 						font-family: $font-basic;
-						font-weigth: $font-weight-bold;
+						font-weight: $font-weight-bold;
 						font-size: 18px;
 						position: relative;
 
@@ -97,9 +97,7 @@
 						&.border {
 							border-radius: 5px;
 							border: 3px solid #fff;
-							padding: 5px;
-							padding-left: 50px;
-							padding-right: 50px;
+							padding: 5px 50px;
 
 							&:hover {
 								background-color: #fff;
@@ -110,7 +108,9 @@
 				}
 			}
 			.social-media {
-				margin: 35px;
+				margin: 35px auto;
+				width: 250px;
+				display: flex;
 				justify-content: space-around;
 				align-items: center;
 			}
@@ -143,6 +143,14 @@
 		z-index: 99;
 		#nav-toggle {
 			@include hamburger;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#nav {
+		.container {
+			width: 90%;
 		}
 	}
 }

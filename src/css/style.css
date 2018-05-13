@@ -150,6 +150,9 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100vh; }
 
+.container {
+  width: 80%; }
+
 #nav .container {
   width: 100%; }
 
@@ -182,7 +185,7 @@ body {
     #nav nav .nav-menu ul li a {
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
-      font-weigth: 600;
+      font-weight: 600;
       font-size: 18px;
       position: relative; }
       #nav nav .nav-menu ul li a.underline:after {
@@ -205,14 +208,16 @@ body {
       #nav nav .nav-menu ul li a.border {
         border-radius: 5px;
         border: 3px solid #fff;
-        padding: 5px;
-        padding-left: 50px;
-        padding-right: 50px; }
+        padding: 5px 50px; }
         #nav nav .nav-menu ul li a.border:hover {
           background-color: #fff;
           color: #001820; }
   #nav nav .nav-menu .social-media {
-    margin: 35px;
+    margin: 35px auto;
+    width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
@@ -282,3 +287,7 @@ body {
         -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
                 transform: rotate(-45deg); }
+
+@media screen and (min-width: 1024px) {
+  #nav .container {
+    width: 90%; } }
