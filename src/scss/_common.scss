@@ -5,8 +5,10 @@
 $font-basic: 'Open Sans', sans-serif;
 $font-description: 'Raleway', sans-serif;
 
-$font-size-basic: 16px;
-$font-size-large: 40px;
+$font-size-small: 12px;
+$font-size-basic: 14px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
 
 $font-weight-light: 200;
 $font-weight-bold: 600;
@@ -43,4 +45,5 @@ body {
 
 .container {
 	width: 80%;
+	margin: 0 auto;
 }
