@@ -157,7 +157,7 @@ body {
 #nav .container {
   width: 100%; }
 
-#nav nav {
+#nav .nav {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,13 +169,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  #nav nav .logo {
+  #nav .nav .logo {
     margin: 0 auto;
     width: 120px; }
-    #nav nav .logo img {
+    #nav .nav .logo img {
       padding-bottom: 30px;
       padding-top: 30px; }
-  #nav nav .nav-menu ul li {
+  #nav .nav .nav-menu ul li {
     line-height: 13vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -183,13 +183,13 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    #nav nav .nav-menu ul li a {
+    #nav .nav .nav-menu ul li a {
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
       font-size: 18px;
       position: relative; }
-      #nav nav .nav-menu ul li a.underline:after {
+      #nav .nav .nav-menu ul li a.underline:after {
         content: '';
         display: block;
         position: absolute;
@@ -201,25 +201,25 @@ body {
         -webkit-transition: width 500ms;
         -o-transition: width 500ms;
         transition: width 500ms; }
-      #nav nav .nav-menu ul li a.underline:hover:after {
+      #nav .nav .nav-menu ul li a.underline:hover:after {
         width: 100%;
         -webkit-transition: width 500ms;
         -o-transition: width 500ms;
         transition: width 500ms; }
-      #nav nav .nav-menu ul li a.border {
+      #nav .nav .nav-menu ul li a.border {
         border-radius: 5px;
         border: 2px solid #fff;
         padding: 6px 50px;
         -webkit-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; }
-        #nav nav .nav-menu ul li a.border:hover {
+        #nav .nav .nav-menu ul li a.border:hover {
           background-color: #fff;
           color: #001820;
           -webkit-transition: all 300ms ease-in-out;
           -o-transition: all 300ms ease-in-out;
           transition: all 300ms ease-in-out; }
-  #nav nav .nav-menu .social-media {
+  #nav .nav .nav-menu .social-media {
     margin: 50px auto;
     width: 250px;
     display: -webkit-box;
@@ -231,7 +231,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer; }
-  #nav nav .overlay {
+  #nav .nav .overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -244,10 +244,10 @@ body {
     z-index: 2;
     opacity: 0;
     visibility: hidden; }
-  #nav nav .open {
+  #nav .nav .open {
     opacity: 1;
     visibility: visible; }
-  #nav nav .nav-mobile {
+  #nav .nav .nav-mobile {
     display: block;
     position: absolute;
     top: 15px;
@@ -255,7 +255,7 @@ body {
     height: 50px;
     width: 50px;
     z-index: 99; }
-    #nav nav .nav-mobile #nav-toggle {
+    #nav .nav .nav-mobile #nav-toggle {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -264,9 +264,9 @@ body {
               transform: translate(-50%, -50%);
       cursor: pointer;
       padding: 5px 30px 10px 0; }
-      #nav nav .nav-mobile #nav-toggle span,
-      #nav nav .nav-mobile #nav-toggle span:before,
-      #nav nav .nav-mobile #nav-toggle span:after {
+      #nav .nav .nav-mobile #nav-toggle span,
+      #nav .nav .nav-mobile #nav-toggle span:before,
+      #nav .nav .nav-mobile #nav-toggle span:after {
         content: '';
         position: absolute;
         display: block;
@@ -278,29 +278,29 @@ body {
         -webkit-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; }
-      #nav nav .nav-mobile #nav-toggle span:before {
+      #nav .nav .nav-mobile #nav-toggle span:before {
         top: -10px; }
-      #nav nav .nav-mobile #nav-toggle span:after {
+      #nav .nav .nav-mobile #nav-toggle span:after {
         bottom: -10px; }
-      #nav nav .nav-mobile #nav-toggle.active span {
+      #nav .nav .nav-mobile #nav-toggle.active span {
         background-color: transparent; }
-        #nav nav .nav-mobile #nav-toggle.active span:before, #nav nav .nav-mobile #nav-toggle.active span:after {
+        #nav .nav .nav-mobile #nav-toggle.active span:before, #nav .nav .nav-mobile #nav-toggle.active span:after {
           top: 0; }
-        #nav nav .nav-mobile #nav-toggle.active span:before {
+        #nav .nav .nav-mobile #nav-toggle.active span:before {
           -webkit-transform: rotate(45deg);
               -ms-transform: rotate(45deg);
                   transform: rotate(45deg); }
-        #nav nav .nav-mobile #nav-toggle.active span:after {
+        #nav .nav .nav-mobile #nav-toggle.active span:after {
           -webkit-transform: rotate(-45deg);
               -ms-transform: rotate(-45deg);
                   transform: rotate(-45deg); }
-  #nav nav .nav-desktop {
+  #nav .nav .nav-desktop {
     display: none; }
 
 @media screen and (min-width: 1024px) {
   #nav .container {
     width: 100%; }
-  #nav nav {
+  #nav .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -309,11 +309,11 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-top: 15px; }
-    #nav nav .logo {
+    #nav .nav .logo {
       margin: initial;
       float: left;
       width: 150px; }
-    #nav nav .nav-desktop {
+    #nav .nav .nav-desktop {
       display: inline-block;
       width: 80%;
       display: -webkit-box;
@@ -325,11 +325,11 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      #nav nav .nav-desktop ul {
+      #nav .nav .nav-desktop ul {
         text-align: right; }
-        #nav nav .nav-desktop ul li {
+        #nav .nav .nav-desktop ul li {
           display: inline-block; }
-          #nav nav .nav-desktop ul li a {
+          #nav .nav .nav-desktop ul li a {
             text-transform: uppercase;
             font-family: "Open Sans", sans-serif;
             font-weight: 600;
@@ -337,7 +337,7 @@ body {
             margin-left: 20px;
             margin-right: 20px;
             position: relative; }
-            #nav nav .nav-desktop ul li a.underline:after {
+            #nav .nav .nav-desktop ul li a.underline:after {
               content: '';
               display: block;
               position: absolute;
@@ -349,12 +349,12 @@ body {
               -webkit-transition: width 500ms;
               -o-transition: width 500ms;
               transition: width 500ms; }
-            #nav nav .nav-desktop ul li a.underline:hover:after {
+            #nav .nav .nav-desktop ul li a.underline:hover:after {
               width: 100%;
               -webkit-transition: width 500ms;
               -o-transition: width 500ms;
               transition: width 500ms; }
-            #nav nav .nav-desktop ul li a.border {
+            #nav .nav .nav-desktop ul li a.border {
               border-radius: 5px;
               border: 2px solid #fff;
               padding: 6px 50px;
@@ -362,23 +362,23 @@ body {
               -o-transition: all 300ms ease-in-out;
               transition: all 300ms ease-in-out;
               padding: 7px 20px; }
-              #nav nav .nav-desktop ul li a.border:hover {
+              #nav .nav .nav-desktop ul li a.border:hover {
                 background-color: #fff;
                 color: #001820;
                 -webkit-transition: all 300ms ease-in-out;
                 -o-transition: all 300ms ease-in-out;
                 transition: all 300ms ease-in-out; }
-    #nav nav .overlay {
+    #nav .nav .overlay {
       display: none; }
-    #nav nav .nav-mobile {
+    #nav .nav .nav-mobile {
       display: none; } }
 
 @media screen and (min-width: 1440px) {
-  #nav nav .logo {
+  #nav .nav .logo {
     width: 200px; }
-  #nav nav .nav-desktop ul li a {
+  #nav .nav .nav-desktop ul li a {
     font-size: 18px; }
-    #nav nav .nav-desktop ul li a.border {
+    #nav .nav .nav-desktop ul li a.border {
       border-radius: 5px;
       border: 2px solid #fff;
       padding: 6px 50px;
@@ -386,7 +386,7 @@ body {
       -o-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
       padding: 7px 25px; }
-      #nav nav .nav-desktop ul li a.border:hover {
+      #nav .nav .nav-desktop ul li a.border:hover {
         background-color: #fff;
         color: #001820;
         -webkit-transition: all 300ms ease-in-out;
