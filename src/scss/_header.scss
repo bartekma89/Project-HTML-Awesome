@@ -1,0 +1,23 @@
+#header {
+	.container {
+		width: 70%;
+	}
+
+	.description {
+		text-align: center;
+		font-family: $font-basic;
+		font-size: $font-size-medium;
+		font-weight: $font-weight-light;
+		line-height: 24px;
+
+		.awesome {
+			font-weight: $font-weight-bold;
+		}
+	}
+
+	@media and screen (min-width: 1024px) {
+	}
+
+	@media and screen (min-width: 1440px) {
+	}
+}
