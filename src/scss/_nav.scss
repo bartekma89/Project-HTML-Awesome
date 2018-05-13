@@ -2,14 +2,11 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 @mixin hamburger {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	@include position-center;
 	cursor: pointer;
 	padding: 5px 30px 10px 0;
 	span,
@@ -22,7 +19,7 @@
 		border-radius: 10px;
 		height: 5px;
 		width: 30px;
-		background-color: #fff;
+		background-color: $hamburger-color;
 		transition: all 300ms ease-in-out;
 	}
 	span:before {
@@ -60,7 +57,7 @@
 	bottom: -8px;
 	width: 0;
 	height: 2px;
-	background-color: #fff;
+	background-color: $underline-color;
 	transition: width 500ms;
 }
 
@@ -73,6 +70,7 @@
 	border-radius: 5px;
 	border: 2px solid #fff;
 	padding: 6px 50px;
+	transition: all 300ms ease-in-out;
 
 	&:hover {
 		background-color: #fff;
@@ -96,20 +94,20 @@
 			margin: 0 auto;
 			width: 120px;
 			img {
-				padding-bottom: 25px;
-				padding-top: 25px;
+				padding-bottom: 30px;
+				padding-top: 30px;
 			}
 		}
 
 		.nav-menu {
 			ul {
 				li {
-					line-height: 15vh;
+					line-height: 13vh;
 					align-items: center;
 					flex: 1;
 					a {
 						@include a-style;
-						font-size: 18px;
+						font-size: $font-size-medium;
 						position: relative;
 
 						&.underline:after {
@@ -127,7 +125,7 @@
 				}
 			}
 			.social-media {
-				margin: 35px auto;
+				margin: 50px auto;
 				width: 250px;
 				display: flex;
 				justify-content: space-around;
@@ -168,17 +166,15 @@
 			display: none;
 		}
 	}
-}
 
-@media screen and (min-width: 1024px) {
-	#nav {
+	@media screen and (min-width: 1024px) {
 		.container {
 			width: 100%;
 		}
-
 		nav {
 			display: flex;
 			flex-direction: row;
+			padding-top: 15px;
 
 			.logo {
 				margin: initial;
@@ -199,8 +195,8 @@
 						a {
 							@include a-style;
 							font-size: 14px;
-							margin-left: 25px;
-							margin-right: 25px;
+							margin-left: 20px;
+							margin-right: 20px;
 							position: relative;
 
 							&.underline:after {
@@ -213,7 +209,7 @@
 
 							&.border {
 								@include border-style;
-								padding: 6px 20px;
+								padding: 7px 20px;
 							}
 						}
 					}
@@ -229,18 +225,9 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 1440px) {
-	#nav {
-		.container {
-			width: 100%;
-		}
-
+	@media screen and (min-width: 1440px) {
 		nav {
-			display: flex;
-			flex-direction: row;
-
 			.logo {
 				width: 200px;
 			}
@@ -253,7 +240,7 @@
 
 							&.border {
 								@include border-style;
-								padding: 6px 25px;
+								padding: 7px 25px;
 							}
 						}
 					}
