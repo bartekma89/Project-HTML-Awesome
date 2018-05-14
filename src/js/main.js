@@ -14,5 +14,11 @@
 		}, 1000);
 	});
 
-	$('#more .text').text('+');
+	$(window).resize(function() {
+		if ($(window).width() > 767) {
+			$('#more .text').text('more');
+		} else {
+			$('#more .text').text('+');
+		}
+	});
 })($);

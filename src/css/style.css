@@ -459,13 +459,13 @@ body {
     .SocialMedia .social-icons a {
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       margin: 10px auto; }
       .SocialMedia .social-icons a span {
         position: relative;
         left: 8px;
-        bottom: 4px; }
+        bottom: 3px; }
       .SocialMedia .social-icons a object {
         width: 18px; }
 
@@ -479,15 +479,26 @@ footer .btn {
   width: 45px;
   height: 45px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #fff; }
   footer .btn .text {
     font-size: 18px;
     font-weight: 200;
+    text-transform: uppercase;
     color: #001820;
     position: absolute;
     left: 0;
     top: 0;
-    -webkit-transform: translateX(5px) rotate(-45deg);
-        -ms-transform: translateX(5px) rotate(-45deg);
-            transform: translateX(5px) rotate(-45deg); }
+    -webkit-transform: translateX(40%) rotate(-45deg);
+        -ms-transform: translateX(40%) rotate(-45deg);
+            transform: translateX(40%) rotate(-45deg); }
+
+@media screen and (min-width: 768px) {
+  footer .btn {
+    width: 80px;
+    height: 80px; }
+    footer .btn .text {
+      font-size: 12px;
+      -webkit-transform: translate(5px, 15px) rotate(-45deg);
+          -ms-transform: translate(5px, 15px) rotate(-45deg);
+              transform: translate(5px, 15px) rotate(-45deg); } }

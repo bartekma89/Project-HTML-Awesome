@@ -7,17 +7,29 @@ footer {
 		width: 45px;
 		height: 45px;
 		border: none;
-		border-radius: 3px;
+		border-radius: 5px;
 		background-color: #fff;
 
 		.text {
 			font-size: $font-size-medium;
 			font-weight: $font-weight-light;
+			text-transform: uppercase;
 			color: #001820;
 			position: absolute;
 			left: 0;
 			top: 0;
-			transform: translateX(5px) rotate(-45deg);
+			transform: translateX(40%) rotate(-45deg);
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.btn {
+			width: 80px;
+			height: 80px;
+			.text {
+				font-size: $font-size-small;
+				transform: translate(5px, 15px) rotate(-45deg);
+			}
 		}
 	}
 }
