@@ -7,21 +7,23 @@ $font-description: 'Raleway', sans-serif;
 
 $font-size-small: 12px;
 $font-size-basic: 14px;
+$font-size-element: 16px;
 $font-size-medium: 18px;
-$font-size-large: 24px;
+$font-size-large: 30px;
 
 $font-weight-light: 200;
 $font-weight-bold: 600;
 
 //colors
-$font-color_1: #000;
-$font-color_2: #fff;
+$font-color_black: #000;
+$font-color_white: #fff;
 $font-hover-color: #001820;
 $bg-color: #001820;
 $hamburger-color: #fff;
 $underline-color: #fff;
 $border-color: #fff;
 $icon-color: #fff;
+$button-color: #fff;
 
 * {
 	box-sizing: border-box;
@@ -32,7 +34,7 @@ html {
 	width: 100%;
 	font-family: $font-description;
 	font-size: $font-size-basic;
-	color: $font-color_2;
+	color: $font-color_white;
 }
 
 body {

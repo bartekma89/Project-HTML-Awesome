@@ -251,7 +251,7 @@
 				ul {
 					li {
 						a {
-							font-size: 18px;
+							font-size: $font-size-medium;
 
 							&.border {
 								@include border-style;

@@ -19,7 +19,7 @@
 
 	.description-paragraph {
 		font-family: $font-basic;
-		font-size: 12px;
+		font-size: $font-size-small;
 		font-weight: $font-weight-bold;
 		line-height: 20px;
 	}
@@ -54,15 +54,15 @@
 			width: 47%;
 		}
 		.description-header {
-			color: #000;
-			font-size: 30px;
+			color: $font-color-black;
+			font-size: $font-size-large;
 			line-height: 32px;
 			padding-left: 10px;
 			padding-right: 10px;
 			margin: 70px auto;
 
 			.awesome {
-				color: #fff;
+				color: $font-color-white;
 			}
 		}
 
@@ -71,7 +71,7 @@
 		}
 
 		.description-paragraph {
-			font-size: 16px;
+			font-size: $font-size-element;
 		}
 	}
 }
