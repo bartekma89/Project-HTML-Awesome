@@ -154,10 +154,10 @@ body {
   width: 80%;
   margin: 0 auto; }
 
-#nav .container {
+.Nav .container {
   width: 100%; }
 
-#nav .nav {
+.Nav nav {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,13 +169,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  #nav .nav .logo {
+  .Nav nav .logo {
     margin: 0 auto;
     width: 120px; }
-    #nav .nav .logo img {
+    .Nav nav .logo img {
       padding-bottom: 30px;
       padding-top: 30px; }
-  #nav .nav .nav-menu ul li {
+  .Nav nav .nav-mobile-menu ul li {
     line-height: 13vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -183,13 +183,13 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    #nav .nav .nav-menu ul li a {
+    .Nav nav .nav-mobile-menu ul li a {
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
       font-size: 18px;
       position: relative; }
-      #nav .nav .nav-menu ul li a.underline:after {
+      .Nav nav .nav-mobile-menu ul li a.underline:after {
         content: '';
         display: block;
         position: absolute;
@@ -201,25 +201,25 @@ body {
         -webkit-transition: width 500ms;
         -o-transition: width 500ms;
         transition: width 500ms; }
-      #nav .nav .nav-menu ul li a.underline:hover:after {
+      .Nav nav .nav-mobile-menu ul li a.underline:hover:after {
         width: 100%;
         -webkit-transition: width 500ms;
         -o-transition: width 500ms;
         transition: width 500ms; }
-      #nav .nav .nav-menu ul li a.border {
+      .Nav nav .nav-mobile-menu ul li a.border {
         border-radius: 5px;
         border: 2px solid #fff;
         padding: 6px 50px;
         -webkit-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; }
-        #nav .nav .nav-menu ul li a.border:hover {
+        .Nav nav .nav-mobile-menu ul li a.border:hover {
           background-color: #fff;
           color: #001820;
           -webkit-transition: all 300ms ease-in-out;
           -o-transition: all 300ms ease-in-out;
           transition: all 300ms ease-in-out; }
-  #nav .nav .nav-menu .social-media {
+  .Nav nav .nav-mobile-menu .social-media {
     margin: 50px auto;
     width: 250px;
     display: -webkit-box;
@@ -231,7 +231,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer; }
-  #nav .nav .overlay {
+  .Nav nav .overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -244,18 +244,18 @@ body {
     z-index: 2;
     opacity: 0;
     visibility: hidden; }
-  #nav .nav .open {
+  .Nav nav .open {
     opacity: 1;
     visibility: visible; }
-  #nav .nav .nav-mobile {
+  .Nav nav .nav-mobile {
     display: block;
     position: absolute;
     top: 15px;
-    right: 10px;
+    right: 15px;
     height: 50px;
     width: 50px;
     z-index: 99; }
-    #nav .nav .nav-mobile #nav-toggle {
+    .Nav nav .nav-mobile #nav-toggle {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -264,9 +264,9 @@ body {
               transform: translate(-50%, -50%);
       cursor: pointer;
       padding: 5px 30px 10px 0; }
-      #nav .nav .nav-mobile #nav-toggle span,
-      #nav .nav .nav-mobile #nav-toggle span:before,
-      #nav .nav .nav-mobile #nav-toggle span:after {
+      .Nav nav .nav-mobile #nav-toggle span,
+      .Nav nav .nav-mobile #nav-toggle span:before,
+      .Nav nav .nav-mobile #nav-toggle span:after {
         content: '';
         position: absolute;
         display: block;
@@ -278,29 +278,35 @@ body {
         -webkit-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; }
-      #nav .nav .nav-mobile #nav-toggle span:before {
+      .Nav nav .nav-mobile #nav-toggle span:before {
         top: -10px; }
-      #nav .nav .nav-mobile #nav-toggle span:after {
+      .Nav nav .nav-mobile #nav-toggle span:after {
         bottom: -10px; }
-      #nav .nav .nav-mobile #nav-toggle.active span {
+      .Nav nav .nav-mobile #nav-toggle.active span {
         background-color: transparent; }
-        #nav .nav .nav-mobile #nav-toggle.active span:before, #nav .nav .nav-mobile #nav-toggle.active span:after {
+        .Nav nav .nav-mobile #nav-toggle.active span:before, .Nav nav .nav-mobile #nav-toggle.active span:after {
           top: 0; }
-        #nav .nav .nav-mobile #nav-toggle.active span:before {
+        .Nav nav .nav-mobile #nav-toggle.active span:before {
           -webkit-transform: rotate(45deg);
               -ms-transform: rotate(45deg);
                   transform: rotate(45deg); }
-        #nav .nav .nav-mobile #nav-toggle.active span:after {
+        .Nav nav .nav-mobile #nav-toggle.active span:after {
           -webkit-transform: rotate(-45deg);
               -ms-transform: rotate(-45deg);
                   transform: rotate(-45deg); }
-  #nav .nav .nav-desktop {
+  .Nav nav .nav-desktop {
     display: none; }
 
+@media screen and (min-width: 768px) {
+  .Nav nav .logo {
+    width: 200px; }
+  .Nav nav .nav-mobile {
+    top: 20px; } }
+
 @media screen and (min-width: 1024px) {
-  #nav .container {
+  .Nav .container {
     width: 100%; }
-  #nav .nav {
+  .Nav nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -309,11 +315,11 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-top: 15px; }
-    #nav .nav .logo {
+    .Nav nav .logo {
       margin: initial;
       float: left;
       width: 150px; }
-    #nav .nav .nav-desktop {
+    .Nav nav .nav-desktop {
       display: inline-block;
       width: 80%;
       display: -webkit-box;
@@ -325,11 +331,11 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      #nav .nav .nav-desktop ul {
+      .Nav nav .nav-desktop ul {
         text-align: right; }
-        #nav .nav .nav-desktop ul li {
+        .Nav nav .nav-desktop ul li {
           display: inline-block; }
-          #nav .nav .nav-desktop ul li a {
+          .Nav nav .nav-desktop ul li a {
             text-transform: uppercase;
             font-family: "Open Sans", sans-serif;
             font-weight: 600;
@@ -337,7 +343,7 @@ body {
             margin-left: 20px;
             margin-right: 20px;
             position: relative; }
-            #nav .nav .nav-desktop ul li a.underline:after {
+            .Nav nav .nav-desktop ul li a.underline:after {
               content: '';
               display: block;
               position: absolute;
@@ -349,12 +355,12 @@ body {
               -webkit-transition: width 500ms;
               -o-transition: width 500ms;
               transition: width 500ms; }
-            #nav .nav .nav-desktop ul li a.underline:hover:after {
+            .Nav nav .nav-desktop ul li a.underline:hover:after {
               width: 100%;
               -webkit-transition: width 500ms;
               -o-transition: width 500ms;
               transition: width 500ms; }
-            #nav .nav .nav-desktop ul li a.border {
+            .Nav nav .nav-desktop ul li a.border {
               border-radius: 5px;
               border: 2px solid #fff;
               padding: 6px 50px;
@@ -362,23 +368,23 @@ body {
               -o-transition: all 300ms ease-in-out;
               transition: all 300ms ease-in-out;
               padding: 7px 20px; }
-              #nav .nav .nav-desktop ul li a.border:hover {
+              .Nav nav .nav-desktop ul li a.border:hover {
                 background-color: #fff;
                 color: #001820;
                 -webkit-transition: all 300ms ease-in-out;
                 -o-transition: all 300ms ease-in-out;
                 transition: all 300ms ease-in-out; }
-    #nav .nav .overlay {
+    .Nav nav .overlay {
       display: none; }
-    #nav .nav .nav-mobile {
+    .Nav nav .nav-mobile {
       display: none; } }
 
 @media screen and (min-width: 1440px) {
-  #nav .nav .logo {
+  .Nav nav .logo {
     width: 200px; }
-  #nav .nav .nav-desktop ul li a {
+  .Nav nav .nav-desktop ul li a {
     font-size: 18px; }
-    #nav .nav .nav-desktop ul li a.border {
+    .Nav nav .nav-desktop ul li a.border {
       border-radius: 5px;
       border: 2px solid #fff;
       padding: 6px 50px;
@@ -386,21 +392,86 @@ body {
       -o-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
       padding: 7px 25px; }
-      #nav .nav .nav-desktop ul li a.border:hover {
+      .Nav nav .nav-desktop ul li a.border:hover {
         background-color: #fff;
         color: #001820;
         -webkit-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; } }
 
-#header .container {
-  width: 70%; }
+.Main .container {
+  width: 70%;
+  text-align: center; }
 
-#header .description {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
+.Main .description-header {
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 200;
   line-height: 24px; }
-  #header .description .awesome {
+  .Main .description-header .awesome {
     font-weight: 600; }
+
+.Main .description-paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px; }
+
+.Main .circle-square {
+  margin: 10px; }
+  .Main .circle-square svg {
+    cursor: pointer;
+    width: 70px; }
+  .Main .circle-square .doRotate {
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation: doRotate 1s linear 1;
+            animation: doRotate 1s linear 1; }
+
+@-webkit-keyframes doRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes doRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.SocialMedia {
+  text-align: center;
+  margin-top: 15px; }
+  .SocialMedia .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .SocialMedia .social-icons a {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 10px auto; }
+      .SocialMedia .social-icons a span {
+        position: relative;
+        left: 8px;
+        bottom: 4px; }
+      .SocialMedia .social-icons a object {
+        width: 18px; }
+
+footer .more {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff; }

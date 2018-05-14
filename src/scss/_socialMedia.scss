@@ -1,0 +1,26 @@
+.SocialMedia {
+	text-align: center;
+	margin-top: 15px;
+	.social-icons {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			font-family: $font-basic;
+			font-weight: $font-weight-bold;
+			font-size: $font-size-basic;
+			text-transform: uppercase;
+			margin: 10px auto;
+
+			span {
+				position: relative;
+				left: 8px;
+				bottom: 4px;
+			}
+
+			object {
+				width: 18px;
+			}
+		}
+	}
+}
