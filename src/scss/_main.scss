@@ -9,6 +9,8 @@
 		font-size: $font-size-medium;
 		font-weight: $font-weight-light;
 		line-height: 24px;
+		padding-left: 5px;
+		padding-right: 5px;
 
 		.awesome {
 			font-weight: $font-weight-bold;
@@ -42,6 +44,34 @@
 			to {
 				transform: rotate(360deg);
 			}
+		}
+	}
+}
+
+.Main {
+	@media screen and (min-width: 1024px) {
+		.container {
+			width: 50%;
+		}
+		.description-header {
+			color: #000;
+			font-size: 32px;
+			line-height: 32px;
+			padding-left: 7px;
+			padding-right: 7px;
+			margin: 70px auto;
+
+			.awesome {
+				color: #fff;
+			}
+		}
+
+		.circle-square {
+			margin: 70px auto;
+		}
+
+		.description-paragraph {
+			font-size: 18px;
 		}
 	}
 }
