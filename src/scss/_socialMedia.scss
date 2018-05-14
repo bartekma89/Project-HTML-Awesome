@@ -25,3 +25,16 @@
 		}
 	}
 }
+
+.SocialMedia {
+	@media screen and (min-width: 1024px) {
+		.container {
+			width: 55%;
+		}
+
+		.social-icons {
+			flex-direction: row;
+			margin-top: 30px;
+		}
+	}
+}

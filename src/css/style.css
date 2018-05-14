@@ -428,7 +428,7 @@ body {
   margin: 10px; }
   .Main .circle-square svg {
     cursor: pointer;
-    width: 75px; }
+    width: 80px; }
   .Main .circle-square .doRotate {
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
@@ -465,7 +465,7 @@ body {
     .Main .description-header .awesome {
       color: #fff; }
   .Main .circle-square {
-    margin: 70px auto; }
+    margin: 90px auto; }
   .Main .description-paragraph {
     font-size: 16px; } }
 
@@ -492,6 +492,16 @@ body {
         bottom: 3px; }
       .SocialMedia .social-icons a object {
         width: 18px; }
+
+@media screen and (min-width: 1024px) {
+  .SocialMedia .container {
+    width: 55%; }
+  .SocialMedia .social-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px; } }
 
 footer .btn {
   position: fixed;
