@@ -29,7 +29,7 @@
 
 		svg {
 			cursor: pointer;
-			width: 70px;
+			width: 75px;
 		}
 
 		.doRotate {
@@ -51,14 +51,14 @@
 .Main {
 	@media screen and (min-width: 1024px) {
 		.container {
-			width: 50%;
+			width: 47%;
 		}
 		.description-header {
 			color: #000;
-			font-size: 32px;
+			font-size: 30px;
 			line-height: 32px;
-			padding-left: 7px;
-			padding-right: 7px;
+			padding-left: 10px;
+			padding-right: 10px;
 			margin: 70px auto;
 
 			.awesome {
@@ -71,7 +71,7 @@
 		}
 
 		.description-paragraph {
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 }

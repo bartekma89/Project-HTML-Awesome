@@ -143,8 +143,8 @@ html {
 body {
   background-image: url("../images/bg_image.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 65%; }
 
 .layer {
   background-color: rgba(0, 0, 0, 0.25);
@@ -153,6 +153,11 @@ body {
 .container {
   width: 80%;
   margin: 0 auto; }
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-position: 65% 40%;
+    background-size: 200%; } }
 
 .Nav .container {
   width: 100%; }
@@ -423,7 +428,7 @@ body {
   margin: 10px; }
   .Main .circle-square svg {
     cursor: pointer;
-    width: 70px; }
+    width: 75px; }
   .Main .circle-square .doRotate {
     -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
@@ -449,20 +454,20 @@ body {
 
 @media screen and (min-width: 1024px) {
   .Main .container {
-    width: 50%; }
+    width: 47%; }
   .Main .description-header {
     color: #000;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 32px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 70px auto; }
     .Main .description-header .awesome {
       color: #fff; }
   .Main .circle-square {
     margin: 70px auto; }
   .Main .description-paragraph {
-    font-size: 18px; } }
+    font-size: 16px; } }
 
 .SocialMedia {
   margin-top: 15px;
