@@ -1,9 +1,23 @@
 footer {
-	.more {
-		width: 15px;
-		height: 15px;
+	.btn {
+		position: fixed;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 55%) rotate(45deg);
+		width: 45px;
+		height: 45px;
 		border: none;
-		border-radius: 5px;
+		border-radius: 3px;
 		background-color: #fff;
+
+		.text {
+			font-size: $font-size-medium;
+			font-weight: $font-weight-light;
+			color: #001820;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translateX(5px) rotate(-45deg);
+		}
 	}
 }

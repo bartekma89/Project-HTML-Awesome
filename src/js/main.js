@@ -13,4 +13,6 @@
 			$this.removeClass('doRotate');
 		}, 1000);
 	});
+
+	$('#more .text').text('+');
 })($);
