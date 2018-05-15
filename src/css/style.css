@@ -159,6 +159,11 @@ body {
     background-position: 65% 40%;
     background-size: 200%; } }
 
+@media screen and (min-width: 1440px) {
+  body {
+    background-position: 65% 35%;
+    background-size: 180%; } }
+
 .Nav .container {
   width: 100%; }
 
@@ -502,30 +507,34 @@ body {
         position: relative;
         left: 8px;
         bottom: 3px; }
+      .SocialMedia .social-icons a .icon-facebook {
+        position: relative;
+        bottom: 2px; }
+        .SocialMedia .social-icons a .icon-facebook + .label {
+          bottom: 8px; }
       .SocialMedia .social-icons a .icon {
         width: 18px; }
 
 @media screen and (min-width: 1024px) {
-  .SocialMedia {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .SocialMedia .container {
-      width: 55%; }
-    .SocialMedia .social-icons {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      margin-top: 30px; } }
+  .SocialMedia .social-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px auto 0;
+    max-width: 500px; }
+    .SocialMedia .social-icons a .icon {
+      width: 20px; } }
 
 @media screen and (min-width: 1440px) {
   .SocialMedia .container {
     width: 40%; }
-  .SocialMedia .social-icons a {
-    font-size: 16px; }
-    .SocialMedia .social-icons a .icon {
-      width: 24px; } }
+  .SocialMedia .social-icons {
+    max-width: 600px; }
+    .SocialMedia .social-icons a {
+      font-size: 16px; }
+      .SocialMedia .social-icons a .icon {
+        width: 24px; } }
 
 footer .btn {
   position: fixed;

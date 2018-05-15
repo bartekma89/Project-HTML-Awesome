@@ -19,6 +19,14 @@
 				bottom: 3px;
 			}
 
+			.icon-facebook {
+				position: relative;
+				bottom: 2px;
+				+ .label {
+					bottom: 8px;
+				}
+			}
+
 			.icon {
 				width: 18px;
 			}
@@ -28,15 +36,16 @@
 
 .SocialMedia {
 	@media screen and (min-width: 1024px) {
-		.container {
-			width: 55%;
-		}
-
-		justify-content: center;
 		.social-icons {
 			flex-direction: row;
-			margin-top: 30px;
-			//max-width: 500px;
+			margin: 20px auto 0;
+			max-width: 500px;
+
+			a {
+				.icon {
+					width: 20px;
+				}
+			}
 		}
 	}
 }
@@ -48,10 +57,9 @@
 		}
 
 		.social-icons {
+			max-width: 600px;
 			a {
 				font-size: $font-size-medium;
-				.label {
-				}
 
 				.icon {
 					width: 24px;
