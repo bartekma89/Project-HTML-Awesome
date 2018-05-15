@@ -4,6 +4,9 @@
 		text-align: center;
 	}
 
+	display: flex;
+	flex-direction: column;
+
 	.description-header {
 		font-family: $font-description;
 		font-size: $font-size-large;
@@ -27,7 +30,7 @@
 
 		svg {
 			cursor: pointer;
-			width: 80px;
+			width: 70px;
 		}
 
 		.doRotate {
@@ -47,15 +50,11 @@
 }
 
 .Main {
-	@media screen and (min-width: 1024px) {
-		.container {
-			width: 45%;
-		}
+	@media screen and (min-width: 768px) {
 		.description-header {
-			color: $font-color-black;
 			font-size: $font-size-veryLarge;
 			line-height: 36px;
-			margin: 8vh auto;
+			margin: 5vh auto;
 			max-width: 460px;
 
 			.awesome {
@@ -64,20 +63,26 @@
 		}
 
 		.circle-square {
-			margin: 9vh auto;
+			margin: 5vh auto;
 		}
 
 		.description-paragraph {
 			font-size: $font-size-basic;
 		}
 	}
-}
 
-.Main {
-	@media screen and (min-width: 1440px) {
-		.container {
-			width: 42%;
+	@media screen and (min-width: 1024px) {
+		.description-header {
+			color: $font-color-black;
+			margin: 9vh auto;
 		}
+
+		.circle-square {
+			margin: 9.5vh auto;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
 		.description-header {
 			font-size: 38px;
 			line-height: 42px;
