@@ -577,6 +577,7 @@ footer .btn {
     height: 80px; }
     footer .btn .text {
       font-size: 12px;
+      color: #000;
       -webkit-transform: translate(5px, 15px) rotate(-45deg);
           -ms-transform: translate(5px, 15px) rotate(-45deg);
               transform: translate(5px, 15px) rotate(-45deg); } }
