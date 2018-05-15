@@ -156,8 +156,8 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background-position: 65% 40%;
-    background-size: 200%; } }
+    background-position: 75% 35%;
+    background-size: 150%; } }
 
 @media screen and (min-width: 1440px) {
   body {
@@ -527,8 +527,6 @@ body {
       width: 20px; } }
 
 @media screen and (min-width: 1440px) {
-  .SocialMedia .container {
-    width: 40%; }
   .SocialMedia .social-icons {
     max-width: 600px; }
     .SocialMedia .social-icons a {
