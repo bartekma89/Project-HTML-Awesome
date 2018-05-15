@@ -13,13 +13,13 @@
 			text-transform: uppercase;
 			margin: 10px auto;
 
-			span {
+			.label {
 				position: relative;
 				left: 8px;
 				bottom: 3px;
 			}
 
-			object {
+			.icon {
 				width: 18px;
 			}
 		}
@@ -32,9 +32,31 @@
 			width: 55%;
 		}
 
+		justify-content: center;
 		.social-icons {
 			flex-direction: row;
 			margin-top: 30px;
+			//max-width: 500px;
+		}
+	}
+}
+
+.SocialMedia {
+	@media screen and (min-width: 1440px) {
+		.container {
+			width: 40%;
+		}
+
+		.social-icons {
+			a {
+				font-size: $font-size-medium;
+				.label {
+				}
+
+				.icon {
+					width: 24px;
+				}
+			}
 		}
 	}
 }

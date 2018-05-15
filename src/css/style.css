@@ -192,7 +192,7 @@ body {
       text-transform: uppercase;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 20px;
       position: relative; }
       .Nav nav .nav-mobile-menu ul li a.underline:after {
         content: '';
@@ -388,7 +388,7 @@ body {
   .Nav nav .logo {
     width: 200px; }
   .Nav nav .nav-desktop ul li a {
-    font-size: 18px; }
+    font-size: 20px; }
     .Nav nav .nav-desktop ul li a.border {
       border-radius: 5px;
       border: 2px solid #fff;
@@ -410,11 +410,9 @@ body {
 
 .Main .description-header {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
-  line-height: 24px;
-  padding-left: 5px;
-  padding-right: 5px; }
+  line-height: 24px; }
   .Main .description-header .awesome {
     font-weight: 600; }
 
@@ -425,7 +423,7 @@ body {
   line-height: 20px; }
 
 .Main .circle-square {
-  margin: 10px; }
+  margin: 10px auto; }
   .Main .circle-square svg {
     cursor: pointer;
     width: 80px; }
@@ -454,20 +452,34 @@ body {
 
 @media screen and (min-width: 1024px) {
   .Main .container {
-    width: 47%; }
+    width: 45%; }
   .Main .description-header {
     color: #000;
     font-size: 30px;
-    line-height: 32px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 70px auto; }
+    line-height: 36px;
+    margin: 8vh auto;
+    max-width: 460px; }
     .Main .description-header .awesome {
       color: #fff; }
   .Main .circle-square {
-    margin: 90px auto; }
+    margin: 9vh auto; }
   .Main .description-paragraph {
-    font-size: 16px; } }
+    font-size: 14px; } }
+
+@media screen and (min-width: 1440px) {
+  .Main .container {
+    width: 42%; }
+  .Main .description-header {
+    font-size: 38px;
+    line-height: 42px;
+    margin: 11vh auto;
+    max-width: 720px; }
+  .Main .circle-square {
+    margin: 12vh auto; }
+    .Main .circle-square svg {
+      width: 120px; }
+  .Main .description-paragraph {
+    font-size: 17px; } }
 
 .SocialMedia {
   margin-top: 15px;
@@ -486,22 +498,34 @@ body {
       font-size: 12px;
       text-transform: uppercase;
       margin: 10px auto; }
-      .SocialMedia .social-icons a span {
+      .SocialMedia .social-icons a .label {
         position: relative;
         left: 8px;
         bottom: 3px; }
-      .SocialMedia .social-icons a object {
+      .SocialMedia .social-icons a .icon {
         width: 18px; }
 
 @media screen and (min-width: 1024px) {
+  .SocialMedia {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .SocialMedia .container {
+      width: 55%; }
+    .SocialMedia .social-icons {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-top: 30px; } }
+
+@media screen and (min-width: 1440px) {
   .SocialMedia .container {
-    width: 55%; }
-  .SocialMedia .social-icons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 30px; } }
+    width: 40%; }
+  .SocialMedia .social-icons a {
+    font-size: 16px; }
+    .SocialMedia .social-icons a .icon {
+      width: 24px; } }
 
 footer .btn {
   position: fixed;
@@ -517,7 +541,7 @@ footer .btn {
   background-color: #fff;
   cursor: pointer; }
   footer .btn .text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     text-transform: uppercase;
     color: #000;

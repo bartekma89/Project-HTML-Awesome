@@ -9,8 +9,6 @@
 		font-size: $font-size-large;
 		font-weight: $font-weight-light;
 		line-height: 24px;
-		padding-left: 5px;
-		padding-right: 5px;
 
 		.awesome {
 			font-weight: $font-weight-bold;
@@ -25,7 +23,7 @@
 	}
 
 	.circle-square {
-		margin: 10px;
+		margin: 10px auto;
 
 		svg {
 			cursor: pointer;
@@ -51,15 +49,14 @@
 .Main {
 	@media screen and (min-width: 1024px) {
 		.container {
-			width: 47%;
+			width: 45%;
 		}
 		.description-header {
 			color: $font-color-black;
 			font-size: $font-size-veryLarge;
-			line-height: 32px;
-			padding-left: 10px;
-			padding-right: 10px;
-			margin: 70px auto;
+			line-height: 36px;
+			margin: 8vh auto;
+			max-width: 460px;
 
 			.awesome {
 				color: $font-color-white;
@@ -67,11 +64,37 @@
 		}
 
 		.circle-square {
-			margin: 90px auto;
+			margin: 9vh auto;
 		}
 
 		.description-paragraph {
-			font-size: $font-size-medium;
+			font-size: $font-size-basic;
+		}
+	}
+}
+
+.Main {
+	@media screen and (min-width: 1440px) {
+		.container {
+			width: 42%;
+		}
+		.description-header {
+			font-size: 38px;
+			line-height: 42px;
+			margin: 11vh auto;
+			max-width: 720px;
+		}
+
+		.circle-square {
+			margin: 12vh auto;
+
+			svg {
+				width: 120px;
+			}
+		}
+
+		.description-paragraph {
+			font-size: 17px;
 		}
 	}
 }
