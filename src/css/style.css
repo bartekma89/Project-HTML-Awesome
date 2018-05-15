@@ -161,7 +161,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   body {
-    background-position: 65% 35%;
+    background-position: 65% 40%;
     background-size: 180%; } }
 
 .Nav .container {
@@ -487,7 +487,7 @@ body {
     margin: 11vh auto;
     max-width: 720px; }
   .Main .circle-square {
-    margin: 12vh auto; }
+    margin: 13vh auto; }
     .Main .circle-square svg {
       width: 120px; }
   .Main .description-paragraph {
