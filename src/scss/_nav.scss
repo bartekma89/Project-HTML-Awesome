@@ -107,7 +107,7 @@
 					flex: 1;
 					a {
 						@include a-style;
-						font-size: $font-size-medium;
+						font-size: $font-size-large;
 						position: relative;
 
 						&.underline:after {
@@ -251,7 +251,7 @@
 				ul {
 					li {
 						a {
-							font-size: $font-size-medium;
+							font-size: $font-size-large;
 
 							&.border {
 								@include border-style;
