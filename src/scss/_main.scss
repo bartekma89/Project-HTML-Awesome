@@ -84,7 +84,7 @@
 
 	@media screen and (min-width: 1440px) {
 		.description-header {
-			font-size: 38px;
+			font-size: $font-size-huge;
 			line-height: 42px;
 			margin: 11vh auto;
 			max-width: 720px;
@@ -99,7 +99,7 @@
 		}
 
 		.description-paragraph {
-			font-size: 17px;
+			font-size: $font-size-medium + 1;
 		}
 	}
 }

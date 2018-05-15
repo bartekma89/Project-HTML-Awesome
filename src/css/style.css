@@ -517,7 +517,7 @@ body {
       .SocialMedia .social-icons a .icon-facebook {
         position: relative;
         bottom: 2px; }
-        .SocialMedia .social-icons a .icon-facebook + .label {
+        .SocialMedia .social-icons a .icon-facebook > .label {
           bottom: 6px; }
       .SocialMedia .social-icons a .icon {
         width: 18px; }
@@ -535,7 +535,7 @@ body {
     .SocialMedia .social-icons a .icon-facebook {
       position: relative;
       bottom: 2px; }
-      .SocialMedia .social-icons a .icon-facebook + .label {
+      .SocialMedia .social-icons a .icon-facebook > .label {
         bottom: 8px; } }
 
 @media screen and (min-width: 1440px) {
@@ -577,7 +577,6 @@ footer .btn {
     height: 80px; }
     footer .btn .text {
       font-size: 12px;
-      color: #000;
       -webkit-transform: translate(5px, 15px) rotate(-45deg);
           -ms-transform: translate(5px, 15px) rotate(-45deg);
               transform: translate(5px, 15px) rotate(-45deg); } }
