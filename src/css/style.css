@@ -567,9 +567,9 @@ footer .btn {
     position: absolute;
     left: 0;
     top: 0;
-    -webkit-transform: translateX(40%) rotate(-45deg);
-        -ms-transform: translateX(40%) rotate(-45deg);
-            transform: translateX(40%) rotate(-45deg); }
+    -webkit-transform: translateX(6px) rotate(-45deg);
+        -ms-transform: translateX(6px) rotate(-45deg);
+            transform: translateX(6px) rotate(-45deg); }
 
 @media screen and (min-width: 768px) {
   footer .btn {
