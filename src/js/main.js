@@ -15,7 +15,7 @@
 	});
 
 	$(window).resize(function() {
-		if ($(window).width() > 767) {
+		if ($(window).width() > 768) {
 			$('#more .text').text('more');
 		} else {
 			$('#more .text').text('+');
