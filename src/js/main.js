@@ -14,11 +14,17 @@
 		}, 1000);
 	});
 
-	$(window).resize(function() {
+	function showButtonText() {
 		if ($(window).width() > 768) {
-			$('#more .text').text('more');
+			return $('#more .text').text('more');
 		} else {
-			$('#more .text').text('+');
+			return $('#more .text').text('+');
 		}
+	}
+
+	showButtonText();
+
+	$(window).resize(function() {
+		showButtonText();
 	});
 })($);

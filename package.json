@@ -14,7 +14,9 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^3.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^6.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bartekma89/Project-HTML-Awesome.git"
