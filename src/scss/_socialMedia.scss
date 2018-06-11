@@ -38,7 +38,7 @@
 	@media screen and (min-width: 1024px) {
 		.social-icons {
 			flex-direction: row;
-			margin: 20px auto 0;
+			margin: 18px auto 0;
 			max-width: 500px;
 
 			a {
@@ -61,7 +61,7 @@
 .SocialMedia {
 	@media screen and (min-width: 1440px) {
 		.social-icons {
-			max-width: 600px;
+			max-width: 550px;
 			a {
 				font-size: $font-size-medium;
 

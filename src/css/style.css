@@ -156,8 +156,8 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background-position: 75% 35%;
-    background-size: 150%; } }
+    background-position: 65% 35%;
+    background-size: 190%; } }
 
 @media screen and (min-width: 1440px) {
   body {
@@ -464,30 +464,32 @@ body {
   .Main .description-header {
     font-size: 30px;
     line-height: 36px;
-    margin: 5vh auto;
+    margin: 7% auto;
     max-width: 460px; }
     .Main .description-header .awesome {
       color: #fff; }
   .Main .circle-square {
-    margin: 5vh auto; }
+    margin: 5% auto; }
   .Main .description-paragraph {
     font-size: 14px; } }
 
 @media screen and (min-width: 1024px) {
   .Main .description-header {
     color: #000;
-    margin: 9vh auto; }
+    margin: 10% auto; }
   .Main .circle-square {
-    margin: 9.5vh auto; } }
+    margin: 14% auto; }
+    .Main .circle-square svg {
+      width: 80px; } }
 
 @media screen and (min-width: 1440px) {
   .Main .description-header {
     font-size: 38px;
     line-height: 42px;
-    margin: 11vh auto;
+    margin: 10% auto;
     max-width: 720px; }
   .Main .circle-square {
-    margin: 13vh auto; }
+    margin: 13% auto; }
     .Main .circle-square svg {
       width: 120px; }
   .Main .description-paragraph {
@@ -528,7 +530,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 20px auto 0;
+    margin: 18px auto 0;
     max-width: 500px; }
     .SocialMedia .social-icons a .icon {
       width: 20px; }
@@ -540,7 +542,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   .SocialMedia .social-icons {
-    max-width: 600px; }
+    max-width: 550px; }
     .SocialMedia .social-icons a {
       font-size: 16px; }
       .SocialMedia .social-icons a .icon {

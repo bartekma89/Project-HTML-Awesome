@@ -54,7 +54,7 @@
 		.description-header {
 			font-size: $font-size-veryLarge;
 			line-height: 36px;
-			margin: 5vh auto;
+			margin: 7% auto;
 			max-width: 460px;
 
 			.awesome {
@@ -63,7 +63,7 @@
 		}
 
 		.circle-square {
-			margin: 5vh auto;
+			margin: 5% auto;
 		}
 
 		.description-paragraph {
@@ -74,11 +74,15 @@
 	@media screen and (min-width: 1024px) {
 		.description-header {
 			color: $font-color-black;
-			margin: 9vh auto;
+			margin: 10% auto;
 		}
 
 		.circle-square {
-			margin: 9.5vh auto;
+			margin: 14% auto;
+
+			svg {
+				width: 80px;
+			}
 		}
 	}
 
@@ -86,12 +90,12 @@
 		.description-header {
 			font-size: $font-size-huge;
 			line-height: 42px;
-			margin: 11vh auto;
+			margin: 10% auto;
 			max-width: 720px;
 		}
 
 		.circle-square {
-			margin: 13vh auto;
+			margin: 13% auto;
 
 			svg {
 				width: 120px;
